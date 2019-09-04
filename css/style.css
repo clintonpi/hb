@@ -1,0 +1,146 @@
+:root {
+  --font-big: 'Alfa Slab One', cursive;
+  --font-small: 'Karla', sans-serif;
+  --color-1: #dcdbd7;
+  --color-2: #432918;
+  --color-3: #597e5f;
+  --color-4: #865139;
+  --color-5: #de8b5b;
+  --border-rad-sm: 5px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-small);
+  font-size: 30px;
+  color: var(--color-2);
+  text-shadow: 0 0 5px var(--color-1);
+}
+
+.container {
+  background-image: url('/images/blanket-comfort-comfortable-1248583.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 5px;
+}
+
+.slide {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  min-width: 180px;
+  max-width: 100%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(220, 219, 215, .5);
+  border-radius: var(--border-rad-sm);
+}
+
+h1 {
+  font-family: var(--font-big);
+  font-size: 6rem;
+  color: var(--color-3);
+  text-shadow: 0 0 5px var(--color-1);
+}
+
+.btn {
+  background-color: var(--color-4);
+  color: var(--color-1);
+  outline: 0;
+  border: 0;
+  border-radius: var(--border-rad-sm);
+  padding: 10px;
+  font-family: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn:hover, .btn:focus {
+  background-color: var(--color-5);
+}
+
+.btn--big {
+  padding: 10px 40px;
+}
+
+select {
+  padding: 5px;
+  font-size: 1rem;
+  text-shadow: inherit;
+  border: 0;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 2px solid var(--color-2);
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hostel {
+  width: 700px;
+  max-width: 95%;
+  margin: auto;
+  padding: 10px;
+  background-color: var(--color-1);
+  border-radius: var(--border-rad-sm);
+  text-align: left;
+  font-size: 1rem;
+}
+
+.hostel__image {
+  width: 100%;
+  height: 300px;
+  border-radius: var(--border-rad-sm);
+  background-image: url('/images/apartment-architecture-bookcase-271816.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.available-hostels {
+  background-color: var(--color-1);
+  border-radius: var(--border-rad-sm);
+}
+
+.btn--to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+}
+
+.progress {
+  background-color: var(--color-1);
+  padding: 5px;
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  width: 95%;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.progress__level {
+  width: 20%;
+  padding: 3px 0;
+  background-color: var(--color-3);
+  border-radius: 3px;
+  transition: .2s;
+}
+
+@media (max-width: 620px) {
+  body {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
