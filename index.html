@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="language" content="English">
+    <meta name="viewport" content="width=device-width">
+    <title>HB</title>
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Karla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="slide" id="slide-1">
+        <div class="center">
+          <h1>Welcome!</h1>
+          <p>Ready to get a comfy hostel?</p>
+          <br>
+          <a href="#slide-2"><button class="btn btn--big">Get started</button></a>
+        </div>
+      </div>
+      <div class="slide" id="slide-2">
+        <div class="center">
+          <label>Please select your preferred location</label>
+          <br>
+          <select name="location">
+            <option value="abule-oja">Abule-oja</option>
+            <option value="palo">Palo</option>
+            <option value="chemist">Chemist</option>
+            <option value="second-gate">Second gate</option>
+            <option value="sabo">Sabo</option>
+            <option value="jibowu">Jibowu</option>
+          </select>
+          <br>
+          <br>
+          <div class="btn-wrap">
+            <a href="#slide-1"><button class="btn">Back</button></a>
+            <a href="#slide-3"><button class="btn">Next</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="slide" id="slide-3">
+        <div class="center">
+          <label for="budget">What's your budget range?</label>
+          <br>
+          <select name="budget">
+            <option value="100k-200k">100k - 200k</option>
+            <option value="200k-300k">200k - 300k</option>
+            <option value="300k-400k">300k - 400k</option>
+            <option value="400k-500k">400k - 500k</option>
+            <option value="500k-600k">500k - 600k</option>
+            <option value="600k-700k">600k - 700k</option>
+          </select>
+          <br>
+          <br>
+          <div class="btn-wrap">
+            <a href="#slide-2"><button class="btn">Back</button></a>
+            <a href="#slide-4"><button class="btn">Next</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="slide" id="slide-4">
+        <div class="center">
+          <p>Mixed hostel?</p>
+          <select name="mixed">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+          <br>
+          <br>
+          <div class="btn-wrap">
+            <a href="#slide-3"><button class="btn">Back</button></a>
+            <a href="#slide-5"><button class="btn">Next</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="slide" id="slide-5">
+        <div class="center">
+          <label for="time">How many minute(s) walk?</label>
+          <br>
+          <select name="time">
+            <option value="10mins-20mins">10mins - 20mins</option>
+            <option value="20mins-30mins">20mins - 30mins</option>
+            <option value="30mins-40mins">30mins - 40mins</option>
+            <option value="40mins-50mins">40mins - 50mins</option>
+            <option value="50mins-60mins">50mins - 60mins</option>
+          </select>
+          <br>
+          <br>
+          <div class="btn-wrap">
+            <a href="#slide-4"><button class="btn">Back</button></a>
+            <a href="#slide-6"><button class="btn">Submit</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="slide available-hostels" id="slide-6">
+        <div class="center">
+          <h2>Available Hostels</h2>
+          <br>
+          <div class="hostel">
+            <div class="hostel__image"></div>
+            <br>
+            <p class="hostel__location">Location: Abule-oja</p>
+            <br>
+            <p class="hostel__description">Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit quae, omnis magni consequuntur veritatis sint alias adipisci numquam architecto laudantium? Consequuntur laudantium, voluptatum illo repudiandae ratione nesciunt quidem illum vero? Repellendus nesciunt voluptatibus dolorem ea deleniti autem exercitationem delectus, odit dolore commodi, mollitia laudantium nobis natus aliquid magnam quasi molestiae reprehenderit accusantium accusamus tempora? Nisi fuga repellat accusantium quis veniam omnis harum unde doloremque dolores, animi magnam corrupti quia!</p>
+            <br>
+            <p class="hostel__price">Price: 250,000</p>
+          </div>
+          <br>
+          <div class="hostel">
+            <div class="hostel__image"></div>
+            <br>
+            <p class="hostel__location">Location: Abule-oja</p>
+            <br>
+            <p class="hostel__description">Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit quae, omnis magni consequuntur veritatis sint alias adipisci numquam architecto laudantium? Consequuntur laudantium, voluptatum illo repudiandae ratione nesciunt quidem illum vero? Repellendus nesciunt voluptatibus dolorem ea deleniti autem exercitationem delectus, odit dolore commodi, mollitia laudantium nobis natus aliquid magnam quasi molestiae reprehenderit accusantium accusamus tempora? Nisi fuga repellat accusantium quis veniam omnis harum unde doloremque dolores, animi magnam corrupti quia!</p>
+            <br>
+            <p class="hostel__price">Price: 250,000</p>
+          </div>
+          <br>
+          <div class="btn-wrap">
+            <a href="#slide-5"><button class="btn">Back</button></a>
+          </div>
+        </div>
+        <br>
+      </div>
+      <br>
+      <a href="#slide-1"><button class="btn btn--to-top">⬆</button></a>
+      <div class="progress">
+        <div class="progress__level"></div>
+      </div>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
